@@ -5,12 +5,16 @@ export default function ColorPicker(props) {
   const [ hueValue, setHueValue ] = useState(Math.floor(Math.random() * 240))
   const [ satValue, setSatValue ] = useState(Math.floor(Math.random() * 100))
   const [ lightValue, setLightValue ] = useState(Math.floor(Math.random() * 100))
+  const [ savedColor, savedColorList ] = useState([])
 
-  const saveColor = () => {}
+  const saveColor = () => {
+    savedColorList((oldList) => oldList.concat(`hsl(${hueValue},${satValue}%,${lightValue}%)`))
+    console.log(savedColor)
+  }
 
   return (
-    <main style={{ backgroundColor: `hsl(${hueValue},${satValue}%,${lightValue}%)` }}>
-      <section className="color-sample">
+    <main>
+      <section className="color-sample" style={{ backgroundColor: `hsl(${hueValue},${satValue}%,${lightValue}%)` }}>
         <h1>{props.title}</h1>
         <section>
           <span>
@@ -31,7 +35,25 @@ export default function ColorPicker(props) {
         <p>
           hsl({hueValue}, {satValue}%, {lightValue}%)
         </p>
-        {/* <button onClick={saveColor}>Save Color</button> */}
+        <button onClick={saveColor}>Save Color</button>
+      </section>
+      <section>
+        <h1>Saved Colors:</h1>
+        <ul className="saved-color-list">
+          {savedColor.map((view) => {
+            console.log(view)
+            return (
+              <li
+                className="saved-color"
+                style={{
+                  backgroundColor: `${view}`
+                }}
+              >
+                <p>{view}</p>
+              </li>
+            )
+          })}
+        </ul>
       </section>
     </main>
   )
