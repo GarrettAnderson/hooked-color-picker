@@ -5,3 +5,8 @@
 ### The user is able to slide the H, S, and L values to alter the Hue, Saturation and Lighting of a color.
 ### The user is able to click a button in order to save the HSL color value to a list with the specific color as a background of that list item.
 
+## Technology Used:
+<!-- [HTML](https://html.com/) want to keep this commented as a reminder. -->
+[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[React](https://reactjs.org/)
