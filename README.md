@@ -10,3 +10,9 @@
 [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [React](https://reactjs.org/)
+
+## Live Site:
+[Production URL](https://hooked-color-picker-garrettanderson.netlify.com)
+
+![screenshot](/images/React_Color_Picker_Screenshot.png)
+<!-- /Users/GarrettGraham/sdg-projects/unit-ii/homework/hooked-color-picker/src/images/React_Color_Picker_Screenshot.png -->
