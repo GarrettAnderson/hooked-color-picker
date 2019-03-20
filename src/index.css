@@ -10,3 +10,19 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.color-sample {
+  border: 3px solid beige;
+  padding: 5rem;
+  margin: 2rem 10rem;
+}

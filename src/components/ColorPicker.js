@@ -12,6 +12,11 @@ export default function ColorPicker(props) {
     console.log(savedColor)
   }
 
+  const randomColor = () => {
+    let h = Math.floor(Math.random() * 240)
+    console.log(h)
+  }
+
   return (
     <main>
       <section className="color-sample" style={{ backgroundColor: `hsl(${hueValue},${satValue}%,${lightValue}%)` }}>
@@ -54,6 +59,9 @@ export default function ColorPicker(props) {
             )
           })}
         </ul>
+      </section>
+      <section>
+        <button onClick={randomColor}>Random Color</button>
       </section>
     </main>
   )
